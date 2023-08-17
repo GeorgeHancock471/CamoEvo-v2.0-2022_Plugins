@@ -93,7 +93,7 @@ leftButton=16;
 
 // Idle
 //---------------------------------------------------
-// Allows the program to check wether to go idle during a loop
+// Allows the program to check whether to go idle during a loop
 
 iSettings = newArray(10000,0, 0, 0);
 
@@ -1104,12 +1104,6 @@ if(!isOpen("SpawnMap")){
 		} // measure LAB
 		
 		
-			
-		run("Enhance Contrast...", "saturated=0.3 normalize");
-		run("Square","Stack");
-
-		run("Paste");
-	
 		if(startsWith(spawnSystem,"measure.")){
 		setThreshold(0.7,1);
 		run("Create Selection");
