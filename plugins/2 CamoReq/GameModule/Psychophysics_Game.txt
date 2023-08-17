@@ -1093,6 +1093,7 @@ if(!isOpen("SpawnMap")){
 				
 			
 			selectImage("ExcludeMap");
+			
 			run("Copy"); setPasteMode("Multiply");
 			selectImage("SpawnMap");
 			
@@ -1130,6 +1131,7 @@ if(!isOpen("SpawnMap")){
 		
 		
 		selectImage("ExcludeMap");
+		run("Select None");
 		run("Copy");
 		setPasteMode("Multiply");
 		selectImage("SpawnMap");
@@ -1336,7 +1338,7 @@ makeOval(Xcoord,Ycoord,TargetSize,TargetSize);
 run("Rotate...", "  angle=&TargetRotation");
 run("Scale... ", "x=aspectRatioW y=aspectRatioH centered");
 
-run("Scale... ", "x=3 y=3 centered");
+run("Scale... ", "x=2 y=2 centered");
 run("Set...","value=0");
 
 } // Spawn Map
