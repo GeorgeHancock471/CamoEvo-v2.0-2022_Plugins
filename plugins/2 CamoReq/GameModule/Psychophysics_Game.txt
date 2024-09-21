@@ -1423,7 +1423,7 @@ selectImage("Target");
 priorX = Xcoord;
 priorY = Ycoord;
 
-group=group+1;
+
 
 if( (2+(floor(i/numPerSlide))) <= ( ( parseFloat(randomTargets.length) ) / numPerSlide) +1 ){
 
